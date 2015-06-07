@@ -72,6 +72,20 @@
 \usepackage{parskip}
 \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
 
+\ifluatex
+  \usepackage[frenchchapters,
+              hyphenation,
+              nosingleletter,
+              lastparline,
+              homeoarchy,
+              rivers,
+              %draft
+              ]{impnattypo}
+\fi
+
+\usepackage[all]{nowidow}
+
+
 % ref index
 \newcommand{\indextitle}{Index des\\ r\'ef\'erences bibliques}
 \usepackage{imakeidx}
