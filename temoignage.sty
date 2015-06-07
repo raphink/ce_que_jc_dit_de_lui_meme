@@ -214,11 +214,15 @@
 
 % Quote box
 \usepackage{wrapfig}
-\newcommand{\quotebox}[2]{%
+\usepackage{ragged2e}
+\newcommand{\quotebox}[3]{%
   \begin{wrapfigure}[#1]{r}{.4\linewidth}
     \fbox{\begin{minipage}{\dimexpr\linewidth-2\fboxrule-2\fboxsep}
-        \centering
-        #2
+      \begin{Center}%
+      \hyphenpenalty=10000%
+      \begin{itshape}#2\end{itshape}\\[1.2mm]
+      \ocadr{}\textsc{#3}%
+      \end{Center}%
     \end{minipage}}
   \end{wrapfigure}
 }
