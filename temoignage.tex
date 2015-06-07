@@ -8,33 +8,16 @@
 
 \usepackage{temoignage}
 
-\renewcommand{\indextitle}{Index des\\r\'ef\'erences\\bibliques}
-
-% Hyphenation tricks
-\renewcommand{\pocketlinebreak}{\linebreak}
-\renewcommand{\pocketpagebreak}{\pagebreak}
-
-\renewenvironment{pocketpar}[1]{\par#1}{\par}
-
-\renewcommand{\signature}[1]{%
-\vspace{1cm}\parbox{2.5in}{\sigfont\raggedleft{\large{#1}}}
-}
-
 \newcommand{\isbn}{978-2-9539988-1-8}
-
-%\usepackage[disable]{review}
 
 \begin{document}
 
-\ifluatex
-  \frontmatter
-  \setlength{\parindent}{0em}
-  %\includepdf{calvinisme_fake_title}
-  \cleardoublepage
-  %\includepdf{calvinisme_title}
-\fi
-
-\pagestyle{empty}
+\frontmatter
+\setlength{\parindent}{0em}
+%\includepdf{temoignage_fake_title}
+%\cleardoublepage
+%\includepdf{temoignage_title}
+%\pagestyle{empty}
 %\include{copyright}
 
 \include{verse}
@@ -44,12 +27,6 @@
 % Debug overfull boxes
 \overfullrule=1mm
 \tolerance=800
-
-\titleformat{\chapter}[display]%
-  {\chapfont\huge\scshape}%
-  {}%
-  {10pt}%
-  {\vspace{-15mm}}
 
 \mainmatter
 \pagestyle{scrheadings}
@@ -65,7 +42,7 @@
 %  \pagestyle{empty}
 %  \include{depotlegal}
 
-  \clearpage
+%  \clearpage
   \mbox{}
 \fi
 
