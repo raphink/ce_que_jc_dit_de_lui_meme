@@ -1,0 +1,204 @@
+\ProvidesPackage{temoignage}
+
+\usepackage[french]{babel} %language selection
+\selectlanguage{french}
+
+% Wrapper for TeX4HT
+\newcommand{\Og}{\og}
+\newcommand{\Fg}{\fg{}}
+
+% HRule
+\newcommand{\HRule}{\rule{\linewidth}{0.2mm}}
+
+% Verse environment
+\newenvironment*{myverse}%
+   {\begin{center}\rule{5cm}{1pt}\\[0.2cm]\doublespacing}%
+   {\\[0.2cm]\rule{5cm}{1pt}\end{center}}
+
+
+% colon, frenchb's definition
+\newcommand\frcolon{%
+      \ifhmode
+        \ifdim\lastskip>\z@
+          \unskip\penalty\@M\Fcolonspace
+        \else
+          \FDP@colonspace
+        \fi
+      \fi
+      \string:\space}
+
+%\usepackage[utf8x]{inputenc}
+% Set fonts
+\usepackage{ifluatex}
+\ifluatex
+  \usepackage{fontspec}
+  \usepackage{xunicode}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Linux Libertine O}
+  \newfontfamily\logofont{ChopinScript}
+  \newfontface\pagemarkfont[Numbers={OldStyle}]{Linux Libertine O}
+  \newfontfamily\headerfont[LetterSpace=20,WordSpace=5]{Linux Libertine O}
+  \newfontfamily\sigfont{LinLibertineSlantedOZ}
+  \newfontfamily\chapfont{Linux Libertine O}
+  \newfontfamily\secfont{Linux Biolinum O}
+  \newfontfamily\lettrinefont{LinLibertineIO}
+  \newfontfamily\myversereffont{Linux Biolinum O}
+\else
+  \newcommand\logofont{}
+  \newcommand\pagemarkfont{}
+  \newcommand\headerfont{}
+  \newcommand\sigfont{}
+  \newcommand\chapfont{}
+  \newcommand\secfont{}
+  \newcommand\lettrinefont{}
+  \newcommand\myversereffont{}
+\fi
+
+\usepackage[breaklinks=true,unicode=true]{hyperref}
+\hypersetup{colorlinks,
+           citecolor=black,
+           filecolor=black,
+           linkcolor=black,
+           urlcolor=black,
+           bookmarksopen=true,
+           pdfpagelayout=twopageright,
+           pdfauthor={chuck smith},
+           pdftitle={Calvinisme, Arianisme et Parole de Dieu},
+           pdftex}
+\usepackage{url}
+
+\usepackage[protrusion=true,final]{microtype}
+
+\usepackage{parskip}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+
+% ref index
+\newcommand{\indextitle}{Index des\\ r\'ef\'erences bibliques}
+\usepackage{imakeidx}
+\indexsetup{level=\chapter*}
+\makeindex[title=\indextitle,intoc,options=-s bibleref.ist,columns=2]
+
+% bibleref settings
+\usepackage{bibleref-french-colombe}
+
+% headers/footers
+\usepackage{scrpage2}
+\renewcommand{\headfont}{\headerfont\scshape}
+\renewcommand{\pnumfont}{\pagemarkfont}
+
+% Get title
+\makeatletter
+\let\titlehead\@title
+\makeatother
+
+% Define \chaphead to be used in section headings
+\let\oldchapter\chapter
+\newcommand\temphead{}
+\newcommand\chaphead{}
+\renewcommand\chapter[2][\temphead]{%
+    \cleardoublepage
+    \renewcommand\temphead{#2}%
+    \ifx #1 \@empty
+       \renewcommand\chaphead{#2}%
+    \else
+       \renewcommand\chaphead{#1}%
+    \fi
+    \oldchapter[#1]{#2}}
+
+\lehead[]{}
+\rohead[]{}
+\lefoot[]{}
+\rofoot[]{}
+\cfoot[\rule{6mm}{0.8pt}\\\pagemark]{\rule{6mm}{0.8pt}\\\pagemark}
+\cehead[]{Le témoignage que Jésus}
+\cohead[]{se rend à lui-même}
+
+\renewcommand*{\chapterpagestyle}{scrplain}
+\setheadsepline{.4pt}
+\pagestyle{scrheadings}
+
+\defpagestyle{chapterend}%
+  {%
+    {\hfill Le témoignage que Jésus\hfill}
+    {\hfill se rend à lui-même\hfill}
+    {}
+  }%
+  {{}{}{}} % Nothing in footer
+\newcommand{\closechapter}{\mbox{}\hfill\thispagestyle{chapterend}}
+
+\renewcommand*{\thechapter}{\arabic{chapter}}
+
+% Set index
+\newcommand{\chindex}{%
+  % Restore normal chapters
+  \let\chapter\oldchapter
+  \renewcommand*{\BRbooktitlestyle}[1]{\textbf{\emph{##1}}\vadjust{\nobreak}}
+  \cleardoublepage
+  \printindex
+  \closechapter
+}
+
+% lettrines
+\usepackage{type1cm} % scalable fonts
+\usepackage{lettrine}
+\usepackage{xcolor}
+\renewcommand{\LettrineFontHook}{\lettrinefont\color[gray]{0.3}}
+
+% Bullet
+\usepackage{xspace}
+\newcommand{\mybullet}{{\color[gray]{0.7}$\bullet$}\xspace}
+
+% Define pocketpar environment to fix hyphenation issues
+% Sample usage:
+%   \begin{pocketpar}{\tolerance=274 \BRallowhypbch}
+% or
+%   \begin{pocketpar}{\emergencystretch=1.5em}
+\newenvironment{pocketpar}[1]{\par}{\par}
+\newenvironment{digestpar}[1]{\par}{\par}
+
+% No page finishes with an hyphenated word
+\brokenpenalty=10000
+% Discourage hyphenation on two lines in a row
+\doublehyphendemerits=1000000000
+
+
+% sections
+\usepackage{titlesec}
+
+\titleformat{\chapter}[display]%
+  {\chapfont\huge\scshape}%
+  {}%
+  {10pt}%
+  {}
+
+\titleformat{\section}%
+  {\secfont\large\bfseries\scshape}%
+  {}%
+  {0pt}%
+  {}
+\titlespacing*{\section}
+  {0pt}{10pt}{0pt}
+
+% cadratin
+\newcommand*{\ocadr}{\mbox{---}\nobreak\,\nobreak}
+\newcommand*{\fcadr}{\unskip\nobreak\,\nobreak{}---}
+
+\newcommand{\signature}[1]{%
+\vspace{1cm}\parbox{3in}{\sigfont\raggedleft{\large{#1}}}
+}
+
+\newcommand{\pocketlinebreak}{}
+\newcommand{\pocketpagebreak}{}
+\newcommand{\digestlinebreak}{}
+\newcommand{\digestpagebreak}{}
+
+\ifluatex
+\usepackage{pdfpages}
+\usepackage{setspace}
+\fi
+
+
+% For Mundus
+%\usepackage{marvosym}
+
+

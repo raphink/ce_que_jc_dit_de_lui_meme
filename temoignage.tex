@@ -1,0 +1,115 @@
+% Pocket book
+\documentclass[paper=4.25in:6.87in,pagesize=pdftex,12pt,
+               headinclude=on,footinclude=on]{scrbook}
+\areaset[0.50in]{2.75in}{5.87in}
+
+\title{Le témoignage que Jésus se rend à lui-même}
+\author{Charles-\'Edouard Babut}
+
+%\usepackage{calvinisme}
+
+\renewcommand{\indextitle}{Index des\\r\'ef\'erences\\bibliques}
+
+% Hyphenation tricks
+\renewcommand{\pocketlinebreak}{\linebreak}
+\renewcommand{\pocketpagebreak}{\pagebreak}
+
+\renewenvironment{pocketpar}[1]{\par#1}{\par}
+
+\renewcommand{\signature}[1]{%
+\vspace{1cm}\parbox{2.5in}{\sigfont\raggedleft{\large{#1}}}
+}
+
+\newcommand{\isbn}{978-2-9539988-1-8}
+
+\usepackage[disable]{review}
+
+\begin{document}
+
+\ifluatex
+  \frontmatter
+  \setlength{\parindent}{0em}
+  %\includepdf{calvinisme_fake_title}
+  \cleardoublepage
+  %\includepdf{calvinisme_title}
+\fi
+
+\pagestyle{empty}
+%\include{copyright}
+
+\include{verse}
+
+\setlength{\parindent}{1em}
+
+% Debug overfull boxes
+\overfullrule=1mm
+\tolerance=800
+
+\titleformat{\chapter}[display]%
+  {\chapfont\huge\scshape}%
+  {}%
+  {10pt}%
+  {\vspace{-15mm}}
+
+\mainmatter
+\pagestyle{scrheadings}
+\pagenumbering{arabic}
+\input{introduction}
+\input{section1}
+\input{section2}
+
+\backmatter
+\chindex
+
+\ifluatex
+%  \pagestyle{empty}
+%  \include{depotlegal}
+
+  \clearpage
+  \mbox{}
+\fi
+
+
+\end{document}
+
+
+
+
+
+% Notes
+% 1
+% Jean 15.30.
+% 2
+% 1 Jean 1.8,10.
+% 3
+% Proverbes 20.9.
+% 4
+% Psaume 143.2.
+% 5
+% Luc 1.6,20.
+% 6
+% Matthieu 5.8.
+% 7
+% Luc 6.20.
+% 8
+% Matthieu 6.12.
+% 9
+% Psaume 130.4.
+% 10
+% Jérémie 13.23
+% 11
+% Ézéchiel 18.31
+% 12
+% Jacques 4.8
+% 13
+% 2 Corinthiens 5.17.
+% 14
+% Matthieu 9.29.
+% 15
+% Ésaïe 45.19.
+% 16
+% Zaccharie 13.1
+% 17
+% Sermon prêché le 5 juin 1872 dans le temple de l’Oratoire, à Paris, à l’occasion de l’ouverture du
+% xxx
+% e synode général de l’Église réformée de France
