@@ -35,7 +35,6 @@
   \usepackage{xunicode}
   \defaultfontfeatures{Ligatures=TeX}
   \setmainfont{Linux Libertine O}
-  \newfontfamily\logofont{ChopinScript}
   \newfontface\pagemarkfont[Numbers={OldStyle}]{Linux Libertine O}
   \newfontfamily\headerfont[LetterSpace=20,WordSpace=5]{Linux Libertine O}
   \newfontfamily\sigfont{LinLibertineSlantedOZ}
@@ -43,6 +42,7 @@
   \newfontfamily\secfont{Linux Biolinum O}
   \newfontfamily\lettrinefont{LinLibertineIO}
   \newfontfamily\myversereffont{Linux Biolinum O}
+  \newfontfamily\quotefont{Linux Biolinum O}
 \else
   \newcommand\logofont{}
   \newcommand\pagemarkfont{}
@@ -52,6 +52,7 @@
   \newcommand\secfont{}
   \newcommand\lettrinefont{}
   \newcommand\myversereffont{}
+  \newcommand\quotefont{}
 \fi
 
 \usepackage[breaklinks=true,unicode=true]{hyperref}
@@ -217,10 +218,10 @@
 \usepackage{ragged2e}
 \newcommand{\quotebox}[3]{%
   \begin{wrapfigure}[#1]{r}{.4\linewidth}
-    \fbox{\begin{minipage}{\dimexpr\linewidth-2\fboxrule-2\fboxsep}
+    \textcolor[rgb]{0.5,0.5,0.5}{\begin{minipage}{\dimexpr\linewidth-2\fboxrule-2\fboxsep}
       \begin{Center}%
       \hyphenpenalty=10000%
-      \begin{itshape}#2\end{itshape}\\[1.2mm]
+      \quotefont#2\\[1.2mm]
       \ocadr{}\textsc{#3}%
       \end{Center}%
     \end{minipage}}
