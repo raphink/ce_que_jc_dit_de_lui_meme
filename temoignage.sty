@@ -218,13 +218,13 @@
 \usepackage{ragged2e}
 \newcommand{\quotebox}[3]{%
   \begin{wrapfigure}[#1]{r}{.4\linewidth}
-    \textcolor[rgb]{0.5,0.5,0.5}{\begin{minipage}{\dimexpr\linewidth-2\fboxrule-2\fboxsep}
+    \textcolor[rgb]{0.5,0.5,0.5}{%
       \begin{Center}%
       \hyphenpenalty=10000%
       \quotefont#2\\[1.2mm]
       \ocadr{}\textsc{#3}%
       \end{Center}%
-    \end{minipage}}
+    }
   \end{wrapfigure}
 }
 
