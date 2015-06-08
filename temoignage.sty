@@ -42,7 +42,7 @@
   \newfontfamily\secfont{Linux Biolinum O}
   \newfontfamily\lettrinefont{LinLibertineIO}
   \newfontfamily\myversereffont{Linux Biolinum O}
-  \newfontfamily\quotefont{Linux Biolinum O}
+  \newfontfamily\quotefont[Scale=0.8]{Linux Biolinum O}
 \else
   \newcommand\logofont{}
   \newcommand\pagemarkfont{}
@@ -216,8 +216,8 @@
 % Quote box
 \usepackage{wrapfig}
 \usepackage{ragged2e}
-\newcommand{\quotebox}[3]{%
-  \begin{wrapfigure}[#1]{r}{.4\linewidth}
+\newcommand{\quotebox}[3][o]{%
+  \begin{wrapfigure}{#1}[1cm]{3.5cm}
     \textcolor[rgb]{0.5,0.5,0.5}{%
       \begin{Center}%
       \hyphenpenalty=10000%
@@ -231,4 +231,9 @@
 % For Mundus
 %\usepackage{marvosym}
 
+
+\usepackage[para]{footmisc}
+\newcommand\footverse[1]{%
+  \footnote{\biblerefstyle{colombe}\ibibleverse#1}
+}
 
