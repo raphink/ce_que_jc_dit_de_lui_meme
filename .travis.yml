@@ -15,3 +15,4 @@ deploy:
   file: temoignage.pdf
   on:
     repo: raphink/temoignage_jesus
+    tags: true
