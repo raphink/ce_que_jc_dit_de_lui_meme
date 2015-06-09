@@ -231,10 +231,20 @@
 % For Mundus
 %\usepackage{marvosym}
 
+\usepackage{bigfoot}
+\DeclareNewFootnote[para]{A}
 
-\usepackage[para]{footmisc}
-\StandardFootnotes
+\expandafter\def\csname @makefnbreak\endcsname{\unskip\linebreak[0]}
+\makeatletter
+  \let\@makefntext@orig\@makefntext
+  \FootnoteSpecific{A}\def\@makefntext#1{%
+      \noindent{\hbox{\textbf{\@thefnmark}\nolinebreak\ }}#1\enspace\hss%
+  }
+\makeatother
+
+\renewcommand{\footnotesize}{\scriptsize}
+
 \newcommand\footverse[1]{%
-  \footnote{\biblerefstyle{colombe}\ibibleverse#1}
+  \footnoteA{\biblerefstyle{colombe}\ibibleverse#1}
 }
 
