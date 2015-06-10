@@ -23,7 +23,7 @@ EBOOK_CONVERT_OPTS=--authors "$(AUTHOR)" --title "$(TITLE)" --language "$(LANGUA
 
 all: pdf
 
-pdf: split split_numbered $(addsuffix .pdf,$(TARGETS))
+pdf: $(addsuffix .pdf,$(TARGETS))
 
 ebooks: mobi epub
 
