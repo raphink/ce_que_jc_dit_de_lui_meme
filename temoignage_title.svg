@@ -369,6 +369,167 @@
          operator="xor"
          result="result3" />
     </filter>
+    <filter
+       id="filter8965-8-6"
+       inkscape:label="In and Out"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Inner colorized shadow, outer black shadow"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur8967-9-1"
+         result="result0"
+         in="SourceAlpha"
+         stdDeviation="4" />
+      <feOffset
+         id="feOffset8969-9-1"
+         dx="5"
+         dy="5"
+         result="result4" />
+      <feComposite
+         id="feComposite8971-0-7"
+         in2="result4"
+         in="SourceGraphic"
+         operator="xor"
+         result="result3" />
+    </filter>
+    <filter
+       id="filter8965-8-6-3"
+       inkscape:label="In and Out"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Inner colorized shadow, outer black shadow"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur8967-9-1-4"
+         result="result0"
+         in="SourceAlpha"
+         stdDeviation="4" />
+      <feOffset
+         id="feOffset8969-9-1-8"
+         dx="5"
+         dy="5"
+         result="result4" />
+      <feComposite
+         id="feComposite8971-0-7-0"
+         in2="result4"
+         in="SourceGraphic"
+         operator="xor"
+         result="result3" />
+    </filter>
+    <filter
+       id="filter8965-8-6-4"
+       inkscape:label="In and Out"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Inner colorized shadow, outer black shadow"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur8967-9-1-1"
+         result="result0"
+         in="SourceAlpha"
+         stdDeviation="4" />
+      <feOffset
+         id="feOffset8969-9-1-2"
+         dx="5"
+         dy="5"
+         result="result4" />
+      <feComposite
+         id="feComposite8971-0-7-7"
+         in2="result4"
+         in="SourceGraphic"
+         operator="xor"
+         result="result3" />
+    </filter>
+    <filter
+       id="filter8965-8"
+       inkscape:label="In and Out"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Inner colorized shadow, outer black shadow"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur8967-9"
+         result="result0"
+         in="SourceAlpha"
+         stdDeviation="4" />
+      <feOffset
+         id="feOffset8969-9"
+         dx="5"
+         dy="5"
+         result="result4" />
+      <feComposite
+         id="feComposite8971-0"
+         in2="result4"
+         in="SourceGraphic"
+         operator="xor"
+         result="result3" />
+    </filter>
+    <filter
+       id="filter8965-8-6-9"
+       inkscape:label="In and Out"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Inner colorized shadow, outer black shadow"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur8967-9-1-6"
+         result="result0"
+         in="SourceAlpha"
+         stdDeviation="4" />
+      <feOffset
+         id="feOffset8969-9-1-29"
+         dx="5"
+         dy="5"
+         result="result4" />
+      <feComposite
+         id="feComposite8971-0-7-8"
+         in2="result4"
+         in="SourceGraphic"
+         operator="xor"
+         result="result3" />
+    </filter>
+    <filter
+       id="filter8965-8-6-3-7"
+       inkscape:label="In and Out"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Inner colorized shadow, outer black shadow"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur8967-9-1-4-0"
+         result="result0"
+         in="SourceAlpha"
+         stdDeviation="4" />
+      <feOffset
+         id="feOffset8969-9-1-8-8"
+         dx="5"
+         dy="5"
+         result="result4" />
+      <feComposite
+         id="feComposite8971-0-7-0-0"
+         in2="result4"
+         in="SourceGraphic"
+         operator="xor"
+         result="result3" />
+    </filter>
+    <filter
+       id="filter8965-8-6-4-6"
+       inkscape:label="In and Out"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Inner colorized shadow, outer black shadow"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur8967-9-1-1-9"
+         result="result0"
+         in="SourceAlpha"
+         stdDeviation="4" />
+      <feOffset
+         id="feOffset8969-9-1-2-9"
+         dx="5"
+         dy="5"
+         result="result4" />
+      <feComposite
+         id="feComposite8971-0-7-7-4"
+         in2="result4"
+         in="SourceGraphic"
+         operator="xor"
+         result="result3" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -378,7 +539,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.5"
-     inkscape:cx="150.67926"
+     inkscape:cx="-87.32074"
      inkscape:cy="518.28499"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -600,93 +761,6 @@
          y="397.6109"
          style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:101.99999809%;text-anchor:middle;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O Bold"
          id="tspan3920" /></text>
-    <g
-       id="g7155"
-       transform="matrix(0.53487104,0,0,0.53487104,-286.23373,430.97011)"
-       style="fill:#000000">
-      <text
-         transform="matrix(0.92991149,0,0,0.92991149,591.60778,68.782979)"
-         sodipodi:linespacing="68.000001%"
-         id="text3954"
-         y="208.53326"
-         x="373.86591"
-         style="font-size:63.88306427px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:68.00000072%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
-         xml:space="preserve"><tspan
-           dy="-64.599983"
-           style="fill:#000000;fill-opacity:1"
-           y="208.53326"
-           x="373.86591"
-           id="tspan3956"
-           sodipodi:role="line">Le</tspan><tspan
-           dy="-52.690262"
-           style="font-size:85.17742157px;letter-spacing:10.6471777px;fill:#000000;fill-opacity:1"
-           id="tspan3958"
-           y="263.32925"
-           x="379.18948"
-           sodipodi:role="line">témoignage</tspan><tspan
-           dy="-44.557335"
-           style="fill:#000000;fill-opacity:1"
-           id="tspan3960"
-           y="309.89441"
-           x="373.86591"
-           sodipodi:role="line">que</tspan><tspan
-           dy="-13.682214"
-           style="font-size:107.537117px;line-height:68.00000072%;fill:#000000;fill-opacity:1"
-           id="tspan3962"
-           y="376.61398"
-           x="373.86591"
-           sodipodi:role="line">J</tspan><tspan
-           style="font-size:107.537117px;line-height:68.00000072%;fill:#000000;fill-opacity:1"
-           id="tspan3964"
-           y="449.73923"
-           x="373.86591"
-           sodipodi:role="line">é</tspan><tspan
-           style="font-size:107.537117px;line-height:68.00000072%;fill:#000000;fill-opacity:1"
-           id="tspan3966"
-           y="522.86444"
-           x="373.86591"
-           sodipodi:role="line">s</tspan><tspan
-           style="font-size:107.537117px;line-height:68.00000072%;fill:#000000;fill-opacity:1"
-           id="tspan3968"
-           y="595.98969"
-           x="373.86591"
-           sodipodi:role="line">u</tspan><tspan
-           style="font-size:107.537117px;line-height:68.00000072%;fill:#000000;fill-opacity:1"
-           id="tspan3970"
-           y="669.11493"
-           x="373.86591"
-           sodipodi:role="line">s</tspan><tspan
-           dy="9.6370983"
-           style="fill:#000000;fill-opacity:1"
-           id="tspan3972"
-           y="718.96106"
-           x="373.86591"
-           sodipodi:role="line">se</tspan><tspan
-           dy="14.36971"
-           style="letter-spacing:-3.22611356px;fill:#000000;fill-opacity:1"
-           id="tspan3976"
-           y="762.40155"
-           x="372.25284"
-           sodipodi:role="line">rend à</tspan><tspan
-           dy="16.65008"
-           style="letter-spacing:-4.30148458px;fill:#000000;fill-opacity:1"
-           id="tspan3978"
-           y="805.84204"
-           x="371.71518"
-           sodipodi:role="line">lui-même</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text4122"
-         y="929.83887"
-         x="829.00409"
-         style="font-size:90px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
-         xml:space="preserve"><tspan
-           style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Linux Libertine Capitals O;-inkscape-font-specification:Linux Libertine Capitals O"
-           y="929.83887"
-           x="829.00409"
-           id="tspan4124"
-           sodipodi:role="line">Charles-Edouard Babut</tspan></text>
-    </g>
     <g
        style="opacity:0.51666667"
        id="g14076"
@@ -2423,6 +2497,122 @@
             </g>
           </g>
         </g>
+      </g>
+    </g>
+    <g
+       id="g4266"
+       transform="translate(0,0.00455661)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4122"
+         y="975.57507"
+         x="149.35428"
+         style="font-size:50.06337738px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
+         xml:space="preserve"><tspan
+           style="font-size:11.12519455px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Linux Libertine Capitals O;-inkscape-font-specification:Linux Libertine Capitals O"
+           y="975.57507"
+           x="149.35428"
+           id="tspan4124"
+           sodipodi:role="line">Charles-Edouard Babut</tspan></text>
+      <g
+         style="fill:#000000"
+         transform="matrix(0.26519225,0,0,0.26519225,-306.65827,744.67089)"
+         id="g6351">
+        <text
+           xml:space="preserve"
+           style="font-size:90px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:81.00000024%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
+           x="934.61743"
+           y="929.83887"
+           id="text4122-4"
+           sodipodi:linespacing="81%"
+           transform="matrix(2.0975716,0,0,2.0975716,-9.5849367,-2751.8708)"><tspan
+             sodipodi:role="line"
+             id="tspan4124-3"
+             x="934.61743"
+             y="929.83887"
+             style="font-size:57.20901108px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:81.00000024%;text-anchor:middle;fill:#000000;fill-opacity:1;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O">Le</tspan><tspan
+             sodipodi:role="line"
+             x="939.38483"
+             y="990.1084"
+             style="font-size:79.13913727px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:81.00000024%;letter-spacing:9.53483582px;word-spacing:0.00476742px;text-anchor:middle;fill:#000000;fill-opacity:1;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
+             id="tspan6118">témoignage</tspan><tspan
+             sodipodi:role="line"
+             x="934.61743"
+             y="1040.2809"
+             style="font-size:57.20901108px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:81.00000024%;text-anchor:middle;fill:#000000;fill-opacity:1;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
+             id="tspan6120">que</tspan><tspan
+             sodipodi:role="line"
+             x="934.61743"
+             y="1086.6201"
+             style="font-size:42.90676117px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:81.00000024%;text-anchor:middle;fill:#000000;fill-opacity:1;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
+             id="tspan6170" /></text>
+        <text
+           xml:space="preserve"
+           style="font-size:90px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:81.00000024%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
+           x="934.61743"
+           y="929.83887"
+           id="text4122-4-7"
+           sodipodi:linespacing="81%"
+           transform="matrix(2.0975716,0,0,2.0975716,-13.567104,-1516.1471)"><tspan
+             sodipodi:role="line"
+             x="934.61743"
+             y="929.83887"
+             style="font-size:57.20901108px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:81.00000024%;text-anchor:middle;fill:#000000;fill-opacity:1;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
+             id="tspan6118-2">se</tspan><tspan
+             sodipodi:role="line"
+             x="933.4256"
+             y="976.17816"
+             style="font-size:57.20901108px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:81.00000024%;letter-spacing:-2.38370895px;word-spacing:-4.76741791px;text-anchor:middle;fill:#000000;fill-opacity:1;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
+             id="tspan6276">rend à</tspan><tspan
+             sodipodi:role="line"
+             x="933.4256"
+             y="1022.5175"
+             style="font-size:57.20901108px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:81.00000024%;letter-spacing:-2.38370895px;text-anchor:middle;fill:#000000;fill-opacity:1;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
+             id="tspan6120-3">lui-même</tspan><tspan
+             sodipodi:role="line"
+             x="934.61743"
+             y="1068.8568"
+             style="font-size:42.90676117px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:81.00000024%;text-anchor:middle;fill:#000000;fill-opacity:1;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
+             id="tspan6170-1" /></text>
+        <text
+           xml:space="preserve"
+           style="font-size:90px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:69.99999881%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
+           x="934.61743"
+           y="929.83887"
+           id="text4122-4-9"
+           sodipodi:linespacing="69.999999%"
+           transform="matrix(2.0975716,0,0,2.0975716,-13.176872,-2244.5749)"><tspan
+             sodipodi:role="line"
+             x="934.61743"
+             y="929.83887"
+             style="font-size:100.11576843px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:69.99999881%;text-anchor:middle;fill:#000000;fill-opacity:1;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
+             id="tspan6120-7"
+             dy="-32.505119">J</tspan><tspan
+             sodipodi:role="line"
+             x="934.61743"
+             y="999.91992"
+             style="font-size:100.11576843px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:69.99999881%;text-anchor:middle;fill:#000000;fill-opacity:1;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
+             id="tspan6343">é</tspan><tspan
+             sodipodi:role="line"
+             x="934.61743"
+             y="1070.001"
+             style="font-size:100.11576843px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:69.99999881%;text-anchor:middle;fill:#000000;fill-opacity:1;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
+             id="tspan6345">s</tspan><tspan
+             sodipodi:role="line"
+             x="934.61743"
+             y="1140.082"
+             style="font-size:100.11576843px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:69.99999881%;text-anchor:middle;fill:#000000;fill-opacity:1;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
+             id="tspan6347">u</tspan><tspan
+             sodipodi:role="line"
+             x="934.61743"
+             y="1210.163"
+             style="font-size:100.11576843px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:69.99999881%;text-anchor:middle;fill:#000000;fill-opacity:1;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
+             id="tspan6349">s</tspan><tspan
+             sodipodi:role="line"
+             x="934.61743"
+             y="1280.244"
+             style="font-size:100.11576843px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:69.99999881%;text-anchor:middle;fill:#000000;fill-opacity:1;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O"
+             id="tspan6170-3" /></text>
       </g>
     </g>
   </g>
