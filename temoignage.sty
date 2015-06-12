@@ -145,11 +145,29 @@
 
 \renewcommand*{\thechapter}{\arabic{chapter}}
 
+% shorter book titles
+\setindexbooktitle{Mt}{Selon Matthieu}%
+\setindexbooktitle{Mc}{Selon Marc}%
+\setindexbooktitle{Lc}{Selon Luc}%
+\setindexbooktitle{Jn}{Selon Jean}%
+
+\setindexbooktitle{ICo}{1 Corinthiens}%
+\setindexbooktitle{IICo}{2 Corinthiens}%
+\setindexbooktitle{ITm}{1 Timothée}%
+\setindexbooktitle{IITm}{2 Timothée}%
+
+\setindexbooktitle{He}{Hébreux}%
+
+\setindexbooktitle{Ap}{Apocalypse}%
+
 % Set index
 \newcommand{\chindex}{%
   % Restore normal chapters
   \let\chapter\oldchapter
-  \renewcommand*{\BRbooktitlestyle}[1]{\indextitlefont\textbf{##1}\vadjust{\nobreak}}
+  \titlespacing*{\chapter}%
+    {0pt}{1em}{5em}
+
+  \renewcommand*{\BRbooktitlestyle}[1]{{\indextitlefont\textbf{##1}}\vadjust{\nobreak}}
   \cleardoublepage
   \printindex
   \closechapter
