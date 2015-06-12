@@ -43,6 +43,7 @@
   \newfontfamily\lettrinefont{LinLibertineIO}
   \newfontfamily\myversereffont{Linux Biolinum O}
   \newfontfamily\quotefont[Scale=0.8]{Linux Biolinum O}
+  \newfontfamily\indextitlefont{Linux Biolinum O}
 \else
   \newcommand\logofont{}
   \newcommand\pagemarkfont{}
@@ -53,6 +54,7 @@
   \newcommand\lettrinefont{}
   \newcommand\myversereffont{}
   \newcommand\quotefont{}
+  \newcommand\indextitlefont{}
 \fi
 
 \usepackage[breaklinks=true,unicode=true]{hyperref}
@@ -147,7 +149,7 @@
 \newcommand{\chindex}{%
   % Restore normal chapters
   \let\chapter\oldchapter
-  \renewcommand*{\BRbooktitlestyle}[1]{\textbf{\emph{##1}}\vadjust{\nobreak}}
+  \renewcommand*{\BRbooktitlestyle}[1]{\indextitlefont\textbf{##1}\vadjust{\nobreak}}
   \cleardoublepage
   \printindex
   \closechapter
