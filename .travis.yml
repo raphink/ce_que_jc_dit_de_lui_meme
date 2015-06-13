@@ -7,12 +7,12 @@ install:
 matrix:
   include:
   - env: BUILD=pdf DEPLOY=true
-    script: make temoignage.pdf LATEX_INTERACTION="nonstopmode -halt-on-error"
+    script: make temoignage.pdf temoignage_interior.pdf LATEX_INTERACTION="nonstopmode -halt-on-error"
 deploy:
   provider: releases
   api_key:
     secure: mDqrzcUQ+Qjfr5//t7ja9xr48enSAdg2oJiYtb3iPPIA0JbmFOAWdxBs6LzFEWhiqBWVgYJd13X1XRUyOEBmR+RKPm2AJN4txPQylt4a7gy9uhPiwty0IQMuOr+FRE3UVt8cv3UTfxB5UkOpNvSdT0JDnDqUPTTXcUdjMH9YdGUW1CChnY/10leWBV806NIasyKqYMHTwGDdVM8wwTG1EuEC6qiDXflAmyYQbwkaeJ2iay2MX7wWmsZKp7ePHJQSiHEC9ago1bI9GMkG0iopa0ppsWcniKJ4674oi21j7TVm0pcWbe/SWXlNG2gB+Ch+oK0QAoJxlSqb97tVUS5c3HU9oYK/qA2hV7Vx/EceSRh6DmM/IgV2UGdd5UNRmuHjgRlAPY11x+muMNiFHoG/KPzDqVvesQZkZDb1qFGWW65foXjmIxxKk2/px69W3lp73buQL4bkX5L96ctIkzaRu/guF8uzkv9a4Vkd7uzsyPkdjVILgBv93nnUnHNwqMxK/rvJe8EkYulewW3kj3eiYdf6gRxKYVYf37R/gFzmV+9M9hp69lNcGjJ4ZixITxSin+EBfuMHdHIcjN2l6SFGkjqarem8mtpeD4VCy2i4n2Ye9yT/DIS9btgTr/3z+FIzY3Ary2n8NOoltMJJYEjlQdxHaMVtjG3MMpDvBC5J8C4=
-  file: temoignage.pdf
+  file: [ temoignage.pdf, temoignage_interior.pdf ]
   on:
     repo: raphink/temoignage_jesus
     tags: true
