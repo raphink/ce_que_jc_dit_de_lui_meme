@@ -10,6 +10,15 @@
 % HRule
 \newcommand{\HRule}{\rule{\linewidth}{0.2mm}}
 
+% Preface
+\newenvironment{preface}{\itshape}{\closechapter[prefaceend]}
+
+\newcommand{\closechapter}[1][chapterend]{
+   \nowidow[6]
+   \mbox{}\hfill
+   \thispagestyle{#1}
+}
+
 % Verse environment
 \newenvironment*{myverse}%
    {\begin{center}\doublespacing}%
@@ -141,7 +150,15 @@
     {}
   }%
   {{}{}{}} % Nothing in footer
-\newcommand{\closechapter}{\mbox{}\hfill\thispagestyle{chapterend}}
+
+\defpagestyle{prefaceend}%
+  {%
+    {\hfill\headerfont{Préface}\hfill}
+    {\hfill\headerfont{Préface}\hfill}
+    {}
+  }%
+  {{}{}{}} % Nothing in footer
+
 
 \renewcommand*{\thechapter}{\arabic{chapter}}
 

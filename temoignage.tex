@@ -8,7 +8,7 @@
 
 \usepackage{temoignage}
 
-\newcommand{\isbn}{978-2-9539988-1-8}
+%\newcommand{\isbn}{978-2-9539988-1-8}
 
 \begin{document}
 
@@ -29,8 +29,13 @@
 \tolerance=800
 
 \mainmatter
-\pagestyle{scrheadings}
 \pagenumbering{arabic}
+
+\pagestyle{scrheadings}
+\input{preface}
+\cleardoublepage
+
+\pagestyle{scrheadings}
 \input{introduction}
 \input{section1}
 \input{section2}
