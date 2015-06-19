@@ -273,7 +273,9 @@
 
 % For all other footnotes
 \usepackage{bigfoot}
+\usepackage{perpage}
 \DeclareNewFootnote[para]{A}
+\MakePerPage{footnoteA}
 
 \expandafter\def\csname @makefnbreak\endcsname{\unskip\linebreak[0]}
 \makeatletter
